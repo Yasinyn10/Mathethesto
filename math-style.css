@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'poppins_blod';
-    src: url(font/poppins.bold.ttf);
+    src: url(poppins.bold.ttf);
 }
 @font-face {
     font-family: 'poppins_title_button';
-    src: url(font/poppins.semibold.ttf);
+    src: url(poppins.semibold.ttf);
 }
 @font-face {
     font-family: 'poppins_text';
-    src: url(font/poppins.regular.ttf);
+    src: url(poppins.regular.ttf);
 }
 :root{
 --base-color:white;
@@ -138,3 +138,4 @@ text-shadow:
     1px 1px 2px black,
     0 0 1em rgb(255, 255, 255),;
 }
+
