@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'poppins_blod';
+    src: url(font/poppins.bold.ttf);
+}
+@font-face {
+    font-family: 'poppins_title_button';
+    src: url(font/poppins.semibold.ttf);
+}
+@font-face {
+    font-family: 'poppins_text';
+    src: url(font/poppins.regular.ttf);
+}
+:root{
+--base-color:white;
+--base-vairant:#000000;
+--text-color:#000000;
+--secondary-text:#232738;
+--primary-color:#000000;
+
+}
+
+.darkmode{
+--base-color:#000000;
+--text-color:white;
+--base-vairant:#ffffff;
+--secondary-text:#a4a5b8;
+--primary-color:#3a435d;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--base-color);
+    color: var(--text-color );
+}
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-vairant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+#theme-switch img{
+    fill: var(--primary-color);
+}
+#theme-switch img:last-child{
+    display: none ;
+}
+.darkmode #theme-switch img:first-child{
+    display: none;
+}
+.darkmode #theme-switch img:last-child{
+display: block;
+}
+.title h1{
+    font-family: poppins_blod;
+    text-align: center;
+  font-size: 365%;
+    margin-top: 12%;
+}
+.title p{
+    font-family: poppins_text;
+    text-align: center;
+    max-width: 800px;
+max-width: 900px;      /* يمنع وصول النص لنهاية الصفحة */
+  margin: auto;        /* توسيط النص */
+  text-align: center;    /* توسيط الكتابة */
+  line-height: 1.6;      /* راحة للعين */
+  font-size: 112.5%;
+  padding-top:5% ;
+}
+h3{
+    font-family: poppins_title_button;
+    font-size: 30px;
+}
+.Square h3{
+    padding-top: 20px;
+    color: var(--base-color);
+text-align: center;
+}
+.Square{
+    background-color: var(--base-vairant);
+    margin-top: 10%;
+    height: 280px;
+ 
+}
+.Square p{
+        color: var(--base-color);
+        font-family: poppins_text;
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 20px;
+        margin-left: 5%;
+        font-size: 15px;
+
+}
+.Square button{
+    height: 40px;
+    width: 280px;
+    font-family: poppins_title_button;
+     color: var(--base-color);
+    background-color: var(--base-vairant);
+  display: block;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: 2%;
+}
+.Square button:hover{
+         color: var(--base-vairant);
+          background-color: var(--base-color);
+   transition: 1s;
+}
+.link a{
+color: var(--text-color);
+font-family: poppins_title_button;
+text-decoration: none;
+margin: 4%;
+
+}
+.link{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-top: 60px;
+}
+.link a:hover{
+    color: #0084ff;
+    transition: 1.2s;
+text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgb(255, 255, 255),;
+}
